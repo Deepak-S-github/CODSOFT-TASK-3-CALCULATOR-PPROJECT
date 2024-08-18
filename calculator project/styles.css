@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.calculator {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+}
+
+.heading {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 2em;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.display {
+    background-color: #263238;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: right;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.equation {
+    font-size: 0.6em;
+    color: #aaa;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    flex: 2;
+}
+
+.operations {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    flex: 1;
+    margin-left: 10px;
+}
+
+.btn {
+    background-color: #90a4ae;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn.zero {
+    grid-column: span 2;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn:hover {
+    background-color: #78909c;
+}
+
+#clear {
+    background-color: #f44336;
+}
+
+#clear:hover {
+    background-color: #e53935;
+}
+
+#equals {
+    background-color: #4caf50;
+}
+
+#equals:hover {
+    background-color: #43a047;
+}
+
+#add, #subtract, #multiply, #divide {
+    background-color: #ff9800;
+}
+
+#add:hover, #subtract:hover, #multiply:hover, #divide:hover {
+    background-color: #fb8c00;
+}
